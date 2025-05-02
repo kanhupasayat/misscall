@@ -33,7 +33,8 @@ SECRET_KEY = 'django-insecure-dgjx&-_m_ne+%d+cs3jj1b_%7dlw9-7z34!9@wz&w^+gcwus)p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -161,7 +162,8 @@ CACHES = {
     }
 }
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'misscall.onrender.com']
+
 
 
 #run this server
