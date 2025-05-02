@@ -1,0 +1,1 @@
+web: daphne -p 8000 -b 0.0.0.0 knowlarity_api.asgi:application
