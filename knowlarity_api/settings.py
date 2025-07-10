@@ -159,11 +159,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Tumhare React app ka URL
-    "https://raazappmisscall.netlify.app/",
-  # Agar frontend kisi aur domain pe ho to
-]
+
 
 CACHES = {
     'default': {
