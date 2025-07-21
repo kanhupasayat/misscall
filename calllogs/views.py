@@ -210,7 +210,7 @@ class AsyncUnattendedMissedCallsView(APIView):
                 customer = call.get('customer_number', '')
                 call_time = call.get('start_time', '')
 
-                if customer and agent not in ['Call Missed', 'NA', '', None]:
+                if customer and agent not in ['Missed', 'NA', '', None]:
                     attended_calls[customer] = max(call_time, attended_calls.get(customer, ''))
 
             # Identify missed calls that are not followed by attended calls
