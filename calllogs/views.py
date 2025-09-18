@@ -184,7 +184,7 @@ class AsyncUnattendedMissedCallsView(APIView):
         try:
             india_tz = pytz.timezone('Asia/Kolkata')
             now = datetime.datetime.now(india_tz)
-            start_time = (now - datetime.timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%S")
+            start_time = (now - datetime.timedelta(hours=48)).strftime("%Y-%m-%dT%H:%M:%S")
             end_time = now.strftime("%Y-%m-%dT%H:%M:%S")
 
             url = 'https://kpi.knowlarity.com/Basic/v1/account/calllog'
